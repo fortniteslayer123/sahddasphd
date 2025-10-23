@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://bj8ooukhgy22q"]
+
+[ext_resource type="Script" uid="uid://ba47ge8c31xxt" path="res://Enemy_related/spawner.gd" id="1_sspqv"]
+[ext_resource type="PackedScene" uid="uid://b87xnpe43awwu" path="res://Enemy_related/enemy.tscn" id="2_gro35"]
+[ext_resource type="Script" uid="uid://bpqdwxae7olv8" path="res://Enemy_related/EnemyType.gd" id="3_4jyw1"]
+[ext_resource type="Resource" uid="uid://brj37q6usuk6u" path="res://Resources/DevilStickMan.tres" id="4_ng2fb"]
+[ext_resource type="Resource" uid="uid://dgdaxdasll4f5" path="res://Resources/Zombie.tres" id="5_vgfa4"]
+[ext_resource type="Resource" uid="uid://u8wmlsc5b16t" path="res://Resources/FlyingWitch.tres" id="6_ng2fb"]
+
+[node name="Spawner" type="Node2D"]
+script = ExtResource("1_sspqv")
+enemy = ExtResource("2_gro35")
+enemy_types = Array[ExtResource("3_4jyw1")]([ExtResource("4_ng2fb"), ExtResource("5_vgfa4"), ExtResource("6_ng2fb")])
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI"]
+offset_left = 551.0
+offset_top = 8.0
+offset_right = 593.0
+offset_bottom = 48.0
+
+[node name="Minute" type="Label" parent="UI/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "0"
+
+[node name="Label3" type="Label" parent="UI/HBoxContainer"]
+layout_mode = 2
+text = ":"
+
+[node name="Second" type="Label" parent="UI/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "00"
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="Pattern" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="Elite" type="Timer" parent="."]
+wait_time = 9.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Pattern" to="." method="_on_pattern_timeout"]
+[connection signal="timeout" from="Elite" to="." method="_on_elite_timeout"]

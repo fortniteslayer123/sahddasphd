@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://dgdaxdasll4f5"]
+
+[ext_resource type="Script" uid="uid://bpqdwxae7olv8" path="res://Enemy_related/EnemyType.gd" id="1_h1mkr"]
+[ext_resource type="Texture2D" uid="uid://dk1erdeacoh44" path="res://Sprites/zombie.png" id="2_lhfg6"]
+
+[resource]
+script = ExtResource("1_h1mkr")
+title = "Zombie"
+texture = ExtResource("2_lhfg6")
+damage = 5.5
+metadata/_custom_type_script = "uid://bpqdwxae7olv8"

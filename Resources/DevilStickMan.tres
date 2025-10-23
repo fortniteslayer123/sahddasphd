@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://brj37q6usuk6u"]
+
+[ext_resource type="Script" uid="uid://bpqdwxae7olv8" path="res://Enemy_related/EnemyType.gd" id="1_sij5d"]
+[ext_resource type="Texture2D" uid="uid://cb2q8mqwsya1c" path="res://Sprites/result.png" id="2_5004p"]
+
+[resource]
+script = ExtResource("1_sij5d")
+title = "DevilStickMan"
+texture = ExtResource("2_5004p")
+damage = 2.0
+metadata/_custom_type_script = "uid://bpqdwxae7olv8"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://u8wmlsc5b16t"]
+
+[ext_resource type="Script" uid="uid://bpqdwxae7olv8" path="res://Enemy_related/EnemyType.gd" id="1_3tbet"]
+[ext_resource type="Texture2D" uid="uid://1hudq6xbtgkb" path="res://Sprites/vihu.png" id="2_rrmn8"]
+
+[resource]
+script = ExtResource("1_3tbet")
+title = "FlyingWitch"
+texture = ExtResource("2_rrmn8")
+damage = 5.1
+metadata/_custom_type_script = "uid://bpqdwxae7olv8"

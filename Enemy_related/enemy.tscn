@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://b87xnpe43awwu"]
+
+[ext_resource type="Script" uid="uid://pkb4lys5t3hn" path="res://Enemy_related/enemy.gd" id="1_vumq1"]
+[ext_resource type="Texture2D" uid="uid://dk1erdeacoh44" path="res://Sprites/zombie.png" id="2_21ioe"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n8odv"]
+radius = 62.087425
+
+[node name="Enemy" type="CharacterBody2D" groups=["Enemy"]]
+scale = Vector2(0.205, 0.205)
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_vumq1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_21ioe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 14.634147)
+shape = SubResource("CircleShape2D_n8odv")
