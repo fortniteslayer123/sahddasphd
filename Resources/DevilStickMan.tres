@@ -7,5 +7,6 @@
 script = ExtResource("1_sij5d")
 title = "DevilStickMan"
 texture = ExtResource("2_5004p")
+health = 5.0
 damage = 2.0
 metadata/_custom_type_script = "uid://bpqdwxae7olv8"

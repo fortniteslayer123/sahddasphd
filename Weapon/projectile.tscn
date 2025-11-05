@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://ch351benlgk44"]
 
-[ext_resource type="Script" uid="uid://b5ca4itekrk0c" path="res://Player_Related/projectile.gd" id="1_mj0ry"]
+[ext_resource type="Script" uid="uid://b5ca4itekrk0c" path="res://Weapon/projectile.gd" id="1_mj0ry"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_l5ju3"]
 size = Vector2(10, 10)
@@ -9,13 +9,13 @@ size = Vector2(10, 10)
 size = Vector2(10, 10)
 
 [sub_resource type="Gradient" id="Gradient_mj0ry"]
-colors = PackedColorArray(0.61960787, 0.0627451, 0.60784316, 0.74509805, 0, 0.39215687, 0.8666667, 0.8156863)
+colors = PackedColorArray(0.54640275, 0.3068856, 0.24814257, 0.74509805, 0.66253406, 0.3074272, 0, 0.8156863)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_mhp3g"]
 gradient = SubResource("Gradient_mj0ry")
 
 [sub_resource type="Curve" id="Curve_wvmh7"]
-_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.97938144, 0), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.95532644, 0.24398398), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 3
 
 [sub_resource type="CurveTexture" id="CurveTexture_4wd1r"]

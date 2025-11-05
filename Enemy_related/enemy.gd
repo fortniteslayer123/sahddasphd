@@ -1,12 +1,21 @@
 extends CharacterBody2D
 
 @export var player_reference : CharacterBody2D
-var damage_popup_node = preload("res://Player_Related/damage.tscn") #lataa damagepopupin vihuun
+var damage_popup_node = preload("res://Weapon/damage.tscn") #lataa damagepopupin vihuun
 var direction : Vector2
 var speed : float = 80
 var damage : float 
 var knockback : Vector2
 var separation : float
+
+
+var health : float:
+	set(value):
+		health = value
+		if health <= 0:
+			queue_free()
+
+
 var elite : bool = false:
 	set(value):
 		elite = value
@@ -19,6 +28,7 @@ var type : Enemy:
 		type = value
 		$Sprite2D.texture = value.texture
 		damage = value.damage
+		health = value.health #updatee hp resourcest
 
 #for optimization eli ei laga noobeille
 func _physics_process(delta: float) -> void:
@@ -56,9 +66,10 @@ func damage_popup(amount):
 	
 func take_damage(amount):
 	var tween = get_tree().create_tween()
-	tween.tween_property($Sprite2D, "modulate", Color(0.696, 0.0, 0.098, 1.0), 0.2)
+	tween.tween_property($Sprite2D, "modulate", Color(0.041, 0.433, 0.192, 1.0), 0.2)
 	tween.chain().tween_property($Sprite2D, "modulate", Color(1, 1, 1), 0.2)
-	
+	tween.bind_node(self)
 	
 	damage_popup(amount)
+	health -= amount
 	

@@ -7,5 +7,6 @@
 script = ExtResource("1_h1mkr")
 title = "Zombie"
 texture = ExtResource("2_lhfg6")
+health = 9.0
 damage = 5.5
 metadata/_custom_type_script = "uid://bpqdwxae7olv8"

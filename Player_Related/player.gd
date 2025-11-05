@@ -12,7 +12,7 @@ var nearest_enemy_distance : float = INF
 
 
 func _physics_process(delta: float) -> void:
-	if nearest_enemy:
+	if is_instance_valid(nearest_enemy):
 		nearest_enemy_distance = nearest_enemy.separation
 		print(nearest_enemy.name)
 	else:

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfegnyiid750c"
-path="res://.godot/imported/luoti.png-2e88ba300012bc7b285d80c8615c70c6.ctex"
+path="res://.godot/imported/luoti.png-ebb737b250647659f78a9a67627ab98e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://luoti.png"
-dest_files=["res://.godot/imported/luoti.png-2e88ba300012bc7b285d80c8615c70c6.ctex"]
+source_file="res://Weapon/luoti.png"
+dest_files=["res://.godot/imported/luoti.png-ebb737b250647659f78a9a67627ab98e.ctex"]
 
 [params]
 

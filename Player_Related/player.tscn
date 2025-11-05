@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://csls18qf6yj0h"]
 
 [ext_resource type="Script" uid="uid://ckpfllwpx3wcl" path="res://Player_Related/player.gd" id="1_nru4t"]
-[ext_resource type="PackedScene" uid="uid://dty451idib1tk" path="res://Player_Related/slot.tscn" id="2_f6bjb"]
-[ext_resource type="Resource" uid="uid://ympmp5eb0ew0" path="res://Resources/MagicSeed.tres" id="3_e3rol"]
+[ext_resource type="PackedScene" uid="uid://dty451idib1tk" path="res://Weapon/slot.tscn" id="2_f6bjb"]
+[ext_resource type="Resource" uid="uid://ympmp5eb0ew0" path="res://Weapon/MagicSeed.tres" id="3_e3rol"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_lpm5r"]
 size = Vector2(20, 20)

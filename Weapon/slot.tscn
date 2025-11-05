@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dty451idib1tk"]
 
-[ext_resource type="Script" uid="uid://ruh2wbesmaqf" path="res://Player_Related/slot.gd" id="1_p6uwf"]
+[ext_resource type="Script" uid="uid://ruh2wbesmaqf" path="res://Weapon/slot.gd" id="1_p6uwf"]
 
 [node name="Slot" type="PanelContainer"]
 offset_right = 40.0

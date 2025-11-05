@@ -19,7 +19,8 @@ config/icon="res://icon.svg"
 folder_colors={
 "res://Enemy_related/": "red",
 "res://Player_Related/": "green",
-"res://Resources/": "gray"
+"res://Resources/": "gray",
+"res://Weapon/": "teal"
 }
 
 [input]
