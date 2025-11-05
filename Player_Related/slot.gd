@@ -8,4 +8,6 @@ extends PanelContainer
 
 
 func _on_cooldown_timeout() -> void:
-	pass # Replace with function body.
+	if weapon:
+		$Cooldown.wait_time = weapon.cooldown
+		weapon.activate(owner, owner.nearest_enemy, get_tree())

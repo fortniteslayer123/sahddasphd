@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 @export var player_reference : CharacterBody2D
+var damage_popup_node = preload("res://Player_Related/damage.tscn") #lataa damagepopupin vihuun
 var direction : Vector2
 var speed : float = 80
 var damage : float 
@@ -47,6 +48,17 @@ func knockback_update(delta):
 	if collider:
 		collider.get_collider().knockback = (collider.get_collider().global_position - global_position).normalized() * 50
 	
+func damage_popup(amount):
+	var popup = damage_popup_node.instantiate()
+	popup.text = str(amount)
+	popup.position = position + Vector2(-50,-25)
+	get_tree().current_scene.add_child(popup)
+	
+func take_damage(amount):
+	var tween = get_tree().create_tween()
+	tween.tween_property($Sprite2D, "modulate", Color(0.696, 0.0, 0.098, 1.0), 0.2)
+	tween.chain().tween_property($Sprite2D, "modulate", Color(1, 1, 1), 0.2)
 	
 	
+	damage_popup(amount)
 	
