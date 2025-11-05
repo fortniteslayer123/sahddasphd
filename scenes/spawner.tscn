@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://bj8ooukhgy22q"]
 
 [ext_resource type="Script" uid="uid://ba47ge8c31xxt" path="res://Enemy_related/spawner.gd" id="1_sspqv"]
-[ext_resource type="PackedScene" uid="uid://b87xnpe43awwu" path="res://Enemy_related/enemy.tscn" id="2_gro35"]
+[ext_resource type="PackedScene" uid="uid://b87xnpe43awwu" path="res://scenes/enemy.tscn" id="2_gro35"]
 [ext_resource type="Script" uid="uid://bpqdwxae7olv8" path="res://Enemy_related/EnemyType.gd" id="3_4jyw1"]
 [ext_resource type="Resource" uid="uid://brj37q6usuk6u" path="res://Resources/DevilStickMan.tres" id="4_ng2fb"]
 [ext_resource type="Resource" uid="uid://dgdaxdasll4f5" path="res://Resources/Zombie.tres" id="5_vgfa4"]

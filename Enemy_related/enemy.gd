@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var player_reference : CharacterBody2D
-var damage_popup_node = preload("res://Weapon/damage.tscn") #lataa damagepopupin vihuun
+var damage_popup_node = preload("res://scenes/damage.tscn") #lataa damagepopupin vihuun
 var direction : Vector2
 var speed : float = 80
 var damage : float 

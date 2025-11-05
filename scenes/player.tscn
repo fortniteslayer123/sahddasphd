@@ -1,8 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://csls18qf6yj0h"]
+[gd_scene load_steps=10 format=3 uid="uid://csls18qf6yj0h"]
 
 [ext_resource type="Script" uid="uid://ckpfllwpx3wcl" path="res://Player_Related/player.gd" id="1_nru4t"]
-[ext_resource type="PackedScene" uid="uid://dty451idib1tk" path="res://Weapon/slot.tscn" id="2_f6bjb"]
+[ext_resource type="PackedScene" uid="uid://dty451idib1tk" path="res://scenes/slot.tscn" id="2_f6bjb"]
 [ext_resource type="Resource" uid="uid://ympmp5eb0ew0" path="res://Weapon/MagicSeed.tres" id="3_e3rol"]
+[ext_resource type="Texture2D" uid="uid://bmjfj2on26ri4" path="res://Sprites/UnderXP.png" id="4_tuyoq"]
+[ext_resource type="Texture2D" uid="uid://4m25f75p0vs8" path="res://Sprites/Exp Bar-xport.png" id="5_fjrip"]
+[ext_resource type="Texture2D" uid="uid://cq2ifk783y6c0" path="res://Sprites/ProgressOfExpBar.png" id="6_smehm"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_lpm5r"]
 size = Vector2(20, 20)
@@ -17,8 +20,10 @@ script = ExtResource("1_nru4t")
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="Weapons" type="HBoxContainer" parent="UI"]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 11.0
+offset_top = 27.0
+offset_right = 139.0
+offset_bottom = 67.0
 
 [node name="Slot" parent="UI/Weapons" instance=ExtResource("2_f6bjb")]
 layout_mode = 2
@@ -29,6 +34,19 @@ layout_mode = 2
 
 [node name="Slot3" parent="UI/Weapons" instance=ExtResource("2_f6bjb")]
 layout_mode = 2
+
+[node name="XP" type="TextureProgressBar" parent="UI"]
+offset_right = 40.0
+offset_bottom = 40.0
+texture_under = ExtResource("4_tuyoq")
+texture_over = ExtResource("5_fjrip")
+texture_progress = ExtResource("6_smehm")
+
+[node name="Level" type="Label" parent="UI/XP"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Level"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = SubResource("PlaceholderTexture2D_lpm5r")

@@ -9,7 +9,7 @@ class_name Weapon
 @export var cooldown : float
 @export var speed : float
 
-@export var projectile_node : PackedScene = preload("res://Weapon/projectile.tscn")
+@export var projectile_node : PackedScene = preload("res://scenes/projectile.tscn")
 
 func activate(_source, _target, _scene_tree):
 	pass
